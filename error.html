@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Error</title>
+  <style>
+    
+    
+    * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #901ed2;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 10vw;
+  z-index: 999;
+  font-weight: 700;
+  line-height: 0.6em;
+}
+
+h1 span {
+  font-size: 0.2em;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.block {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background: #901ed2;
+  -webkit-box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=style.css.map */
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  border:1px solid white;
+  background :#626FFF8F;
+  transition: all 0.5s ease;
+}
+a:hover{
+  border-radius: 30px;
+  transform: scale(1.1);
+  background:transparent;
+}
+    
+    
+    body{
+      cursor: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTexlJgCXHr-kzhumZCY6vA_atcFtdiPCYFnOOKpLWY91-5EqOfMuIYjS8&s=10'), auto
+    }
+    
+  </style>
+</head>
+<body>
+
+
+<head>
+<body>
+  <div class="background">
+    <h1><span>Error bro Kami gak dukung dekstop</span><br/><a href="https://wa.me/6283182719413">Kirim Pesan</a></h1>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+    console.log(" dalam mode mobile.");
+    window.location.href = "index.html";
+} else {
+    console.log("dalam mode mobile.");
+}
+  
+  
+  
+  const background = document.querySelector(".background");
+
+// Create 100 div elements with the class "block" and append them to the "background."
+for (let i = 0; i < 100; i++) {
+  const block = document.createElement("div");
+  block.classList.add("block");
+  background.appendChild(block);
+}
+
+// Define the animation function using Anime.js
+const animateBlocks = () => {
+  anime({
+    targets: ".block",
+    translateX: () => anime.random(-700, 700),
+    translateY: () => anime.random(-500, 500),
+    scale: () => anime.random(1, 5),
+    easing: "linear",
+    duration: 3000,
+    delay: anime.stagger(10),
+    complete: animateBlocks
+  });
+};
+
+// Start the animation
+animateBlocks();
+
+  
+</script>
+
+
+</body>
+</html>

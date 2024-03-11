@@ -1,0 +1,16 @@
+{
+  "name": "Sahur Alarm",
+  "short_name": "Sahur",
+  "description": "Aplikasi Alarm untuk Sahur",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#000",
+  "icons": [
+    {
+      "src": "hg.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

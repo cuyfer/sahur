@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Madimi+One&family=Pacifico&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(135deg, rgba(107, 107, 107, 0.06) 0%, rgba(107, 107, 107, 0.06) 50%, rgba(202, 202, 202, 0.06) 50%, rgba(202, 202, 202, 0.06) 100%), linear-gradient(90deg, rgb(20, 20, 20), rgb(20, 20, 20));
+}
+
+.konten {
+  background-size: 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  flex-direction: column;
+}
+
+.jam {
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: all 0.6s ease;
+  animation: muncul 3s ease;
+}
+
+.jam:hover {
+  transform: scale(1.1);
+}
+
+.haritahun {
+  animation: muncul 3s ease;
+  font-size: 1.5em;
+  flex-direction: row;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  margin-bottom: 40px;
+  /* font-family: Consolas; */
+  transition: all 0.5s ease;
+}
+
+.haritahun:hover {
+  transform: translateY(-5px);
+}
+
+.inputjam {
+  margin: 50px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  margin-bottom: 40px;
+  /* font-family: Consolas; */
+  transition: all 0.5s ease;
+  animation: muncul 3s ease;
+}
+
+.inputjam:hover {
+  transform: translateY(-8px)
+}
+
+.inputjam #nomor {
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 40px;
+  background: transparent;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+#nomor[type="time"]::placeholder {
+  color: white;
+}
+
+.inputjam .list-waktu {
+  display: flex;
+  margin: 10px;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.inputjam .list-waktu ul li {
+  margin: 20px;
+}
+
+.set {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.set #kliks {
+  padding: 20px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  width: 95%;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+#matikanlagu {
+  display: none;
+  padding: 20px;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 15px;
+  font-weight: bold;
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+#matikanlagu:hover {
+  background: white;
+  color: black;
+  transform: translateY(-6px);
+}
+
+.overlay {
+  font-family: "Madimi One", sans-serif;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  z-index: 999;
+  font-family: "Madimi One", sans-serif;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.popup h1 p {
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: transparent;
+  color: black;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 20px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  border: 1px solid #c3c1c1;
+}
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#setting {
+  padding: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  left: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.kaseting{
+  font-family: "Madimi One", sans-serif;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  
+}
+.kaseting .isis{
+  animation: muter 2s ease;
+  background:rgb(255,255,255);
+  padding: 70px;
+  z-index: 99999;
+  border-radius: 20px;
+}
+.isis h1{
+  margin-bottom: 30px;
+}
+
+.but #fulls{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  border:none;
+  background:#07113C;
+  width: 60%;
+  transition: all 0.5s ease;
+}
+#fulls:hover{
+  transform: rotate(360deg)
+}
+
+.but h3{
+  margin-top: 10px;
+}
+
+#pilih {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  outline: none;
+  background-color: #fff;
+}
+
+#pilih option {
+  padding: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+#pilih option:first-child {
+  color: #999;
+}
+
+.foot {
+  margin-top: 40px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot a {
+  text-decoration: none;
+  color: #8199FF;
+  font-weight: bold;
+}
+
+@keyframes muter{
+  0%{
+    opacity: 0;
+    transform: scale(0.55);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1.0);
+  }
+}
+
+.tasbih #tasbih{
+  padding: 15px;
+  border: 1px solid white;
+  color: white;
+  background:#4CB8D9;
+  border-radius: 10px;
+  width: 60%;
+}
+.tasbih h3{
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+
+.uiverse {
+  position: relative;
+  background: #ffffff;
+  color: #000;
+  padding: 15px;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.uiverse:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+svg:hover span,
+svg:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.uiverse:hover,
+.uiverse:hover .tooltip,
+.uiverse:hover .tooltip::before {
+  background: linear-gradient(320deg, rgb(3, 77, 146), rgb(0, 60, 255));
+  color: #ffffff;
+}

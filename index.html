@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="manifest" href="manifest.json"/>
+  <link href="hg.png" rel="icon">
+    <link href="bg.png" rel="apple-touch-icon">
+  <title>Sahur</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+</head>
+<body>
+<button type="button" id="setting" onclick="munculcuy()"><i class="material-icons">settings</i></button>
+  <div class="kaseting" id="kaseting">
+    <div class="isis">
+      <span class="close-btn" onclick="tutupSet()">&times;</span>
+      <h1>Settings bray</h1>
+      <h3>Pilih Font</h3>
+      <select name="pilih" id="pilih" onclick="kuypil()">
+        <option value="">default</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Montserrat">Montserrat</option>
+        <option value="OpenSans">OpenSans</option>
+        <option value="Lato">Lato</option>
+        <option value="Poppins">Poppins</option>
+        <option value="sepesial">Sepesial</option>
+      </select>
+      <div class="but">
+        <h3>Fullscreen</h3>
+        <button type="button" id="fulls" onclick="fulls()">Full</button>
+      </div>
+      <div class="tasbih">
+        <h3>Tasbih(akan datang)</h3>
+     <!--    <button id="tasbih" type="button">Tasbih</button> -->
+     <div class="uiverse">
+    <span class="tooltip">Selamat Berzikir</span>
+    <span>
+        Zikir
+    </span>
+</div>
+      </div>
+      <div class="foot">
+        <a href="https://wa.me/6283182719413?text=Saya Punya Keluhan">Kirim Keluhan</a>
+      </div>
+    </div>
+  </div>
+  <audio loop id="musik" src="bangun.mp3"></audio>
+  <div class="overlay" id="popup">
+    <div class="popup">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Massage From Developer Ganteng</h2>
+        <p>Hansamida hansamida</p>
+        <button class="cta-button" onclick="closePopup()">Close</button>
+    </div>
+</div>
+ <div class="konten">
+  <div class="haritahun">
+    <p>
+      <span id="hari"></span>,
+      <span id="tanggal"></span>
+      <span id="bulan"></span>
+      <span id="tahun"></span>
+    </p>
+
+  </div>
+  <div class="jam" id="jam">
+  </div>
+  <div data-aos="flip-left" class="inputjam">
+    <input onclick="busss()" type="time" name="nomors" id="nomor" placeholder="Waktu">
+    <p style="margin:15px; text-align: center;">Set Waktu</p>
+    <div class="list-waktu">
+      <ul>
+        <li>
+         <label for="waktu">Sahur</label>
+         <h1 id="sahur"></h1>
+         <p id="sahurn"></p>
+       </li>
+       <li>
+         <label for="waktu">Subuh</label>
+         <h1 id="subuh"></h1>
+         <p id="subuhn"></p>
+       </li>
+       <li>
+         <label for="waktu">Imsak</label>
+         <h1 id="imsak"></h1>
+         <p id="imsakn"></p>
+       </li> 
+       <li>
+         <label for="waktu">Magrib</label>
+         <h1 id="magrib"></h1>
+         <p id="magribn"></p>
+       </li>
+      </ul>
+      
+    </div>
+      <button onclick="mati()" id="matikanlagu">Matikan Alarm</button>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./sc.js"></script>
+</body>
+</html>
